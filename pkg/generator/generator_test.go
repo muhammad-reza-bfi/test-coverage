@@ -3,7 +3,7 @@ package generator_test
 import (
 	"testing"
 
-	. "github.com/elangreza14/test-coverage/pkg/generator"
+	. "github.com/muhammad-reza-bfi/test-coverage/pkg/generator"
 	"github.com/stretchr/testify/assert"
 )
 

@@ -1,4 +1,4 @@
-module github.com/elangreza14/test-coverage
+module github.com/muhammad-reza-bfi/test-coverage
 
 go 1.21.1
 
