@@ -8,3 +8,9 @@ install-go-test-coverage:
 check-coverage: install-go-test-coverage
 	go test ./... -coverprofile=./cover.out -covermode=atomic -coverpkg=./...
 	${GOBIN}/go-test-coverage --config=./.github/.testcoverage.yml
+
+# Runs tests on entire repo
+.PHONY: test
+test: 
+	go test -timeout=3s -race -count=10 -failfast -short ./...
+	go test -timeout=3s -race -count=1 -failfast ./...
