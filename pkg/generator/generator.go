@@ -5,7 +5,7 @@ func GenerateOddOrEven(start int64) func() int64 {
 	go func(c chan int64) {
 		for {
 			c <- start
-			start = start + 2
+			start += 2
 		}
 	}(ch)
 
