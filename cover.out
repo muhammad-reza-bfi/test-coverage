@@ -1,0 +1,6 @@
+mode: atomic
+github.com/elangreza14/test-coverage/pkg/generator/generator.go:3.50,5.24 2 1
+github.com/elangreza14/test-coverage/pkg/generator/generator.go:5.24,6.7 1 1
+github.com/elangreza14/test-coverage/pkg/generator/generator.go:6.7,9.4 2 3
+github.com/elangreza14/test-coverage/pkg/generator/generator.go:12.2,12.22 1 1
+github.com/elangreza14/test-coverage/pkg/generator/generator.go:12.22,14.3 1 2
