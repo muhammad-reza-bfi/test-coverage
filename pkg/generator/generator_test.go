@@ -8,6 +8,8 @@ import (
 )
 
 func TestGenerateOddOrEven(t *testing.T) {
+	t.Parallel()
+
 	gen := GenerateOddOrEven(1)
 	assert.Equal(t, gen(), int64(1))
 	assert.Equal(t, gen(), int64(3))
