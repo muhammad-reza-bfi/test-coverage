@@ -13,3 +13,16 @@ func GenerateOddOrEven(start int64) func() int64 {
 		return <-ch
 	}
 }
+
+func FanIn(channels ...chan int64) <-chan int64 {
+	out := make(chan int64)
+	for _, channel := range channels {
+		go func(out, channel chan int64) {
+			for {
+				out <- <-channel
+			}
+		}(out, channel)
+	}
+
+	return out
+}
