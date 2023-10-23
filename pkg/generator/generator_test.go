@@ -21,5 +21,6 @@ func TestFanIn(t *testing.T) {
 	genOdd := GenerateOddOrEvenRaw(1)
 	genEven := GenerateOddOrEvenRaw(2)
 	gen := FanIn(genOdd, genEven)
+	t.Log(<-gen, <-gen)
 	assert.NotEqual(t, <-gen, <-gen)
 }
